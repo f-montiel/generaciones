@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Facundo Montiel">
+    <meta name="description" content="Ejercicio 2 del trabajo practico numero 6 de javascript (DOM y BOM)">
+    <meta name="keywords" content="javascript, BOM, DOM">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generaciones!</title>
+</head>
+<body>
+    <main  class="container">
+        <h1 class="my-3">Generaciones</h1>
+        <section>
+            <form class="form-group" id="formulario">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control" required minlength="3" maxlength="50">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input type="number" id="edad" class="form-control" required min="1" max="150">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="dni" class="form-label">DNI</label>
+                        <input type="number" id="dni" class="form-control" required min="1" max="99999999">
+                    </div>    
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <select class="form-select" id="sexo" required>
+                            <option value=""></option>
+                            <option value="F">Femenino</option>
+                            <option value="M">Masculino</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="peso" class="form-label">Peso</label>
+                        <input type="number" id="peso" class="form-control" required min="1" max="300">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="altura" class="form-label">Altura</label>
+                        <input type="number" id="altura" class="form-control" step="0.01" required min="0.01" max="3.00">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <label for="nacimiento" class="form-label">Año de nacimiento</label>
+                        <input type="number" id="nacimiento" class="form-control" required min="1" max="2022">
+                    </div>
+                </div>
+                    <button type="submit" class="btn btn-primary my-3" id="guardar">Crear Persona</button>
+            </form>
+            <button class="btn btn-success my-1" id="generacion">Mostrar generacion</button>
+            <button class="btn btn-danger my-1" id="validarEdad">Validar edad</button>
+        </section>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
